@@ -1,0 +1,18 @@
+# ROS 2 build and install folders
+/build/
+/install/
+/log/
+
+# CMake and colcon
+CMakeCache.txt
+CMakeFiles/
+colcon*
+*.cmake
+
+# Misc
+*.swp
+*.user
+*.db
+*.pyc
+*.pyo
+*.DS_Store
