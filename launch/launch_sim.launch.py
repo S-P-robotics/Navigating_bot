@@ -40,7 +40,7 @@ def generate_launch_description():
     spawn_entity = Node(
         package='ros_gz_sim',
         executable='create',
-        arguments=['-topic', 'robot_description', '-name', 'my_bot', '-z', '0.05'],
+        arguments=['-topic', 'robot_description', '-name', 'my_bot', '-x', '0', '-y', '0', '-z', '0.05'],
         output='screen'
     )
 
@@ -55,6 +55,11 @@ def generate_launch_description():
         ]
     )
 
+    # ros_gz_image_bridge = Node(
+    #     package="ros_gz_image", 
+    #     executable="image_bridge", 
+    #     arguments=["/camera/image_raw"]
+    # )
 
     return LaunchDescription([
         rsp,
