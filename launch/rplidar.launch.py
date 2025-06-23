@@ -1,9 +1,9 @@
 import os 
 
 from launch import LaunchDescription
-from launch_ros_actions import Node 
+from launch_ros.actions import Node 
 
-def generate_launch_decription(); 
+def generate_launch_decription():
 
 
     return LaunchDescription([
